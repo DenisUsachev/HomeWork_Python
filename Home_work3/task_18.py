@@ -8,7 +8,7 @@ import random
 array = [random.randrange(10) for _ in range(int(input('Введите количество чисел в массиве: ')))]
 num = int(input('Введите число: '))
 near_num = 0
-diff = 1
+diff = 0
 
 while near_num == 0 :
     for i in range(len(array)):
