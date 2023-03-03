@@ -14,7 +14,7 @@ J, X – 8 очков;
 
 lang = int(input('Language English\Russia (0/1): '))
 if lang == 0:
-    lst = {'AEIOULNSTR':1, 'DG':2, 'BCMP':3, 'FHVWY':4, 'K':5, 'JX':8, 'QZ':10} #№ СЛОВЬ НА СЛОВАРИ И КЛЮЧ ПО БУКВЕ
+    lst = {'AEIOULNSTR':1, 'DG':2, 'BCMP':3, 'FHVWY':4, 'K':5, 'JX':8, 'QZ':10}
 else:
     lst = {'АВЕИНОРСТ':1, 'ДКЛМПУ':2, 'БГЁЬЯ':3, 'ЙЫ':4, 'ЖЗЧЦЧ':5, 'ШЭЮ':8, 'ФЩЪ':10}
 
