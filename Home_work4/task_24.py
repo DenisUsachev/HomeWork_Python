@@ -11,16 +11,16 @@ n =int(input('Введите количество растений: '))
 arr = [random.randrange(10) for _ in range(n)]
 
 print(arr)
-summ = 0
+summ1 = 0
 i = 0
 while i > n - 3:
-    if summ < arr[i] + arr[i + 1] + arr[i + 2]:
-        summ = arr[i] + arr[i + 1] + arr[i + 2]
+    if summ1 < (summ := arr[i] + arr[i + 1] + arr[i + 2]):
+        summ1 = summ
     i += 1
 while i != n :
-    if summ < arr[i - n] + arr[i + 1 - n] + arr[i + 2 - n]:
-        summ = arr[i - n] + arr[i + 1 - n] + arr[i + 2 - n]
+    if summ1 < (summ := arr[i - n] + arr[i + 1 - n] + arr[i + 2 - n]):
+        summ1 = summ
     i += 1
 
 
-print(summ)
+print(summ1)
