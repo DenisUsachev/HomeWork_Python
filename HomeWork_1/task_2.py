@@ -5,9 +5,7 @@
 
 number_products = int(input('Введите сколько было сделано журавликов: '))
 
-
-first_child = number_products // 4
-third_child = number_products // 4
+first_child = third_child = number_products // 6
 second_child = number_products - first_child - third_child
 
 print(first_child, second_child, third_child)
