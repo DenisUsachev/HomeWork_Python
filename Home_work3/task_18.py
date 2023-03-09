@@ -11,9 +11,9 @@ near_num = 0
 diff = 0
 
 while near_num == 0 :
-    for i in range(len(array)):
-        if array[i] - num == diff or num - array[i] == diff:
-            near_num = array[i]
+    for i in array:
+        if i - num == diff or num - i == diff:
+            near_num = i
             break
     else:
         diff += 1

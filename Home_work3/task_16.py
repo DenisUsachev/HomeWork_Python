@@ -7,10 +7,11 @@ import random
 
 array = [random.randrange(10) for _ in range(int(input('Введите количество чисел в массиве: ')))]
 quantity_num = int(input('Введите число которое будет считать: '))
+print(array)
 count = 0
 
-for i in range(len(array)):
-    if array[i] == quantity_num:
+for i in array:
+    if i == quantity_num:
         count += 1
-print(array)
+
 print(count)
